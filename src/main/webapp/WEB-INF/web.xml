@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.customer.loginservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/log</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AdminLogin</servlet-name>
+    <servlet-class>com.admin.adminloginservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLogin</servlet-name>
+    <url-pattern>/adminlog</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CustomerInsert</servlet-name>
+    <servlet-class>com.customer.CustomerInsert</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerInsert</servlet-name>
+    <url-pattern>/CustomerInsert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UpdateCustomerDetailsServlet</servlet-name>
+    <servlet-class>com.customer.UpdateCustomerDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateCustomerDetailsServlet</servlet-name>
+    <url-pattern>/UpdateCustomerDetailsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteCustomerServlet</display-name>
+    <servlet-name>DeleteCustomerServlet</servlet-name>
+    <servlet-class>com.customer.DeleteCustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCustomerServlet</servlet-name>
+    <url-pattern>/DeleteCustomerServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
